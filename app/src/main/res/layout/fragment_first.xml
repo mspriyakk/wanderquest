@@ -9,29 +9,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="6dp">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/textview_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="Find out where you could go."
+            android:layout_marginTop="16dp"
+            android:text="Find out where could go"
             app:layout_constraintBottom_toTopOf="@id/textview_second"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textview_budget_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:text="What is your maximum budget?"
-            app:layout_constraintBottom_toTopOf="@id/textview_second"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/textview_first" />
 
         <EditText
             android:id="@+id/editText"
@@ -42,7 +31,7 @@
             app:layout_constraintBottom_toTopOf="@id/textview_second"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textview_budget_label" />
+            app:layout_constraintTop_toBottomOf="@id/textview_first" />
 
         <TextView
             android:id="@+id/textview_second"
@@ -65,5 +54,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textview_second" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.core.widget.NestedScrollView>

@@ -20,7 +20,7 @@ interface DestinationApiService {
     suspend fun getDestination(
         @Query("query") query: String,
         @Query("key") apiKey: String
-    ): String
+    ): Response
 }
 
 private val json = Json {
@@ -30,7 +30,7 @@ private val json = Json {
 
 private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
-    .addConverterFactory(ScalarsConverterFactory.create())
+    .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
     .build()
 
 object DestinationApi {
