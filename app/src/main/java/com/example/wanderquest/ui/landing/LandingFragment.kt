@@ -29,6 +29,7 @@ class LandingFragment : Fragment() {
         return binding.root
 
     }
+    //new editing test here Chloe
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
