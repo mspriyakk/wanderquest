@@ -69,16 +69,57 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textview_location" />
 
+
+
         <TextView
             android:id="@+id/textview_travelstyle_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="What kind of traveler are you?"
-            app:layout_constraintBottom_toTopOf="@id/button_first"
+            app:layout_constraintBottom_toTopOf="@id/radioGroup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editTextLocation" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@id/button_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_travelstyle_label">
+
+            <!-- Radio Button 1 -->
+            <RadioButton
+                android:id="@+id/radioButton1"
+                style="@style/RadioButtonWithImage"
+                android:drawableTop="@drawable/artstyle2"
+                android:text="Art Style" />
+
+            <!-- Radio Button 2 -->
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/RadioButtonWithImage"
+                android:drawableTop="@drawable/touristattraction2"
+                android:text="Tourist Attraction" />
+
+            <!-- Radio Button 3 -->
+            <RadioButton
+                android:id="@+id/radioButton3"
+                style="@style/RadioButtonWithImage"
+                android:drawableTop="@drawable/park2"
+                android:text="Casual" />
+
+            <!-- Radio Button 4 -->
+            <RadioButton
+                android:id="@+id/radioButton4"
+                style="@style/RadioButtonWithImage"
+                android:drawableTop="@drawable/shopping2"
+                android:text="Shopping" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/button_first"
@@ -88,9 +129,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textview_travelstyle_label" />
+            app:layout_constraintTop_toBottomOf="@id/radioGroup" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </androidx.core.widget.NestedScrollView>
