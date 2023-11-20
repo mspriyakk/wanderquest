@@ -13,6 +13,7 @@ class DestinationViewModel: ViewModel () {
             val result = DestinationApi.retrofitService.getDestination("restaurants in New York", "AIzaSyCRPyR0FILxgbwgLDfgRMzU3zohQnnKaRE");
             Log.d("hooray ", result.toString())
         }
+        //parse result by place name, image, category, price
     }
 }
 
