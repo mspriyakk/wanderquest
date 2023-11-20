@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Define your data binding variables here -->
+        <variable
+            name="itemTile"
+            type="com.example.wanderquest.ui.landing.LandingFragment.ItemTile" />
+    </data>
+
+    <!-- Your updated layout structure with CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonTile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{itemTile.text}" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@{itemTile.imageResId}" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
