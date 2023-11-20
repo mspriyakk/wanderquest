@@ -1,5 +1,4 @@
-# wanderquest
-# Traveler Game Quest App
+# Traveler Game Quest App (WanderQuest)
 
 Welcome to the Traveler Game Quest App! This Android application combines travel exploration with gaming elements, allowing users to unlock destinations by completing quests.
 
