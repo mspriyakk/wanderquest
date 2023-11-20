@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WanderQuest"
         tools:targetApi="31">
+
+        <!-- implementing google maps functionality here// to display we need to add an mapview fragment
+        wherever we want to display the map. please see below.
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:height="match_parent" /> -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="PLACE API KEY HERE" />
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
