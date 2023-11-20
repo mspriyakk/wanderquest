@@ -21,6 +21,7 @@ class DestinationViewModel: ViewModel () {
 
 
         }
+        //parse result by place name, image, category, price
     }
 }
     private fun handleDestinationResponse(response: Response){
