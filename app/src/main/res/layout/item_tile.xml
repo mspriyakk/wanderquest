@@ -30,7 +30,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@{itemTile.imageResId}" />
+                app:srcCompat="@{itemTile.imageResourceId}" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </layout>
