@@ -14,7 +14,7 @@ The Traveler Game Quest App aims to provide users with an interactive and gamifi
 
 ## Installation
 
-- Clone the repository to your local machine using `git clone https://github.com/mspriyakk/wanderquest/edit/dev-version2/
+- Clone the repository to your local machine using `git clone [https://github.com/mspriyakk/wanderquest/edit/dev-version2/](https://github.com/mspriyakk/wanderquest/tree/main)
 - Open the project in Android Studio.
 - Build and run the app on an Android emulator or a physical device.
 
