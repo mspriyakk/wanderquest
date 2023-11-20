@@ -76,7 +76,7 @@ class LandingFragment : Fragment() {
 
     private fun getYourApiKey(): String {
         // Implement secure retrieval of API key
-        return "" //BuildConfig.API_KEY
+        return ""//BuildConfig.API_KEY
     }
 
 

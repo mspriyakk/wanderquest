@@ -1,3 +1,4 @@
+import java.util.Properties
 
 plugins {
     id("com.android.application")
@@ -18,7 +19,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
 
     }
 
