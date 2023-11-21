@@ -132,6 +132,8 @@ class LandingFragment : Fragment() {
             fetchRecommendations(budget, travelStyle)
         }
     }
+
+
     //need ui design for get recommendations (destinations)
     private fun fetchRecommendations(budget: String, travelStyle: String) {
         val query = constructQuery(budget, travelStyle)
@@ -150,8 +152,9 @@ class LandingFragment : Fragment() {
             }
         }
     }
-    //ui design for unlock and lock destinations (from the above destination)
 
+
+    //ui design for unlock and lock destinations (from the above destination)
     private fun constructQuery(budget: String, travelStyle: String): String {
         // Construct and return the API query
         return "location = New York& budget= $budget&style=$travelStyle"
