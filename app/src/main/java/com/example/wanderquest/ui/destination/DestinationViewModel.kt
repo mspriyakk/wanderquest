@@ -8,22 +8,24 @@ import com.example.wanderquest.network.DestinationApi
 import kotlinx.coroutines.launch
 
 class DestinationViewModel: ViewModel () {
-    fun getDestination(){
+    fun getDestination() {
         viewModelScope.launch {
 
-            try{
-            val response = DestinationApi.retrofitService.getDestination(
-                "restaurants in New York",
-                "AIzaSyBV0idDDgajLB0X69oYvq8bPnr-uO092gw"
-            )
+            try {
+                val response = DestinationApi.retrofitService.getDestination(
+                    "restaurants in New York",
+                    "AIzaSyBV0idDDgajLB0X69oYvq8bPnr-uO092gw"
+                )
                 handleDestinationResponse(response)
-        } catch (e: Exception) {
+            } catch (e: Exception) {
 
-
+            }
+            //parse result by place name, image, category, price
         }
-        //parse result by place name, image, category, price
+
     }
-    private fun handleDestinationResponse(response: Response){
+
+    private fun handleDestinationResponse(response: Response) {
         val destinations = response.results
         Log.d("API results ", destinations.toString())
     }
