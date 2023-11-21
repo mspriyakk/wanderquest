@@ -1,13 +1,33 @@
-# wanderquest
-WanderQuest entails developing a traveler game quest application for Android users. The goal is to offer users an engaging journey through various destinations. By using advanced technologies that Google has to offer such as the Google Maps API, WanderQuest enables adventurers to mark visited locations and unlock new destinations created just for the traveler (user) using route optimization. Encouraging exploration and accomplishments is the goal for all travelers. This project aspires to redefine travel experiences for users to embark on exciting quests and create great memories. 
+ # Wander Quest Game App
 
+Welcome to the Traveler Game Quest App! This Android application combines travel exploration with gaming elements, allowing users to unlock destinations by completing quests.
 
-Backend Integration:
-Integrated the Google Places API to fetch restaurant data based on user queries (e.g., "restaurants in New York").
-Data Handling:
-Designed data classes using Kotlinx. serialization to parse and manage destination details received from the API response.
-Route Optimization:
-Developed a route optimization utility using algorithmic concepts like the Traveling Salesman Problem (TSP) to create an optimized sequence for visiting destinations based on user preferences and location.
-Though initial UI and API implementation was planned, due to time constraints, the full integration of the user interface showcasing destination details obtained from the Google Places API was not achieved. However, the groundwork was laid using views and XML layouts, setting the foundation for a visually engaging interface that aims to display an array of travel options for users exploring New York City."
+## Overview
 
+The Traveler Game Quest App aims to provide users with an interactive and gamified travel experience. It offers optimized routes for different destinations and rewards users as they progress through each location.
+
+## Features
+
+- **Destination Unlocking**: Users can unlock new destinations by completing quests at the current location.
+- **Optimized Routes**: Provides optimized routes for traveling between unlocked destinations.
+- **Interactive Quests**: Engaging quests and challenges at each location to unlock the next destination.
+
+## Installation
+
+- Clone the repository to your local machine using `git clone [https://github.com/mspriyakk/wanderquest/edit/dev-version2/](https://github.com/mspriyakk/wanderquest/tree/main)
+- Open the project in Android Studio.
+- Build and run the app on an Android emulator or a physical device.
+
+## Dependencies
+
+- Google Maps SDK for Android
+- Other dependencies as listed in the `build.gradle` file
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create a pull request or open an issue in the repository.
+
+## Acknowledgements
+
+Special thanks to Allegra Garland, Kay Lee, and Chloe Chen for their valuable contributions to this project.
 
