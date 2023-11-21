@@ -10,19 +10,18 @@ import kotlinx.coroutines.launch
 class DestinationViewModel: ViewModel () {
     fun getDestination(){
         viewModelScope.launch {
-            //parse result  by place name, image, category, price, rating , new properties locked (boolean)
 
             try{
-                val response = DestinationApi.retrofitService.getDestination(
-                    "restaurants in New York",
-                    "AIzaSyBV0idDDgajLB0X69oYvq8bPnr-uO092gw"
-                )
-                Log.d("hooray ", response.toString())
+            val response = DestinationApi.retrofitService.getDestination(
+                "restaurants in New York",
+                "AIzaSyBV0idDDgajLB0X69oYvq8bPnr-uO092gw"
+            )
                 handleDestinationResponse(response)
-            } catch (e: Exception) {
+        } catch (e: Exception) {
 
-            }
+
         }
+        //parse result by place name, image, category, price
     }
     private fun handleDestinationResponse(response: Response){
         val destinations = response.results
