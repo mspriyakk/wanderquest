@@ -15,7 +15,7 @@ class DestinationViewModel: ViewModel () {
             try{
                 val response = DestinationApi.retrofitService.getDestination(
                     "restaurants in New York",
-                    "AIzaSyBV0idDDgajLB0X69oYvq8bPnr-uO092gw"
+                    ""
                 )
                 Log.d("hooray ", response.toString())
                 handleDestinationResponse(response)
